@@ -1,0 +1,401 @@
+body {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777;
+  line-height: 34px;
+  background: url("../images/background_image_ps_neutral.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*general*/
+
+.container {
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  width: 960px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+  font-weight: 700;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+}
+
+
+/*header*/
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  margin: 0 0 10px;
+  overflow: auto;
+  width: 100%;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+#logo {
+  width: 250px;
+  height: 90px;
+  float: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5E7F7E;
+}
+
+.about-page, .portfolio-page, .contact-page{
+  text-decoration: none;
+  padding: 33px 10px 0px 10px;
+    position: relative;
+    float: right;
+    color: grey;
+    border-top: 3px solid transparent;
+    font-size: 1.2em;
+}
+
+.about-page, .portfolio-page, .contact-page{
+  text-decoration: none;
+  padding: 33px 10px 0px 10px;
+    position: relative;
+    float: right;
+    color: grey;
+    border-top: 3px solid transparent;
+    font-size: 20px;
+}
+
+.about-page:hover, .portfolio-page:hover, .contact-page:hover{
+
+    opacity:.8;
+    position:relative;
+    border-top:3px solid #4aaaa5;
+}
+
+/*footer*/
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  color: #fff;
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
+}
+
+
+/*sticky footer stuff*/
+
+
+/*http://ryanfait.com/html5-sticky-footer/*/
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -105px;
+}
+
+
+
+/*end sticky footer stuff*/
+
+/*sidebar*/
+
+.sidebar {
+  padding: 30px;
+  width: 100%;
+  float: right;
+  margin-bottom: 20px;
+  background: #fff;
+  max-width: 270px;
+  border: 1px solid #ddd;
+}
+
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social:hover{
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+/*main*/
+
+#main-container {
+  padding-top: 130px;
+}
+
+.main-section {
+  padding: 30px;
+  margin: 0 0 40px 0;
+  width: 100%;
+  max-width: 650px;
+  float: left;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+
+/*portfolio page*/
+
+.portfolio {
+  position: relative;
+  width: 274px;
+  overflow: auto;
+  float: left;
+  margin: 20px 0 25px;
+}
+
+.portfolio:nth-child(even) {
+  margin-right: 40px;
+}
+
+.portfolio img {
+  width: 350px;
+  height: 250px;
+  border: 0 none;
+  opacity: .8;
+}
+
+.portfolio h3 {
+  position: absolute;
+  bottom: 20px;
+  margin-bottom: 0;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.profilepic {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
+}
+
+.portfolio:hover{
+  -webkit-filter: brightness(60%);
+}
+
+/*contact page*/
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+ .submit-button{
+  background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*Start of @media screen - No Bootstrap Assignment*/
+@media screen and (max-width: 980px){
+  .container{
+    width: 80%;
+  }
+  .main-section{
+    width: 60%;
+  }
+
+  .sidebar{
+    width: 40%;
+  }
+
+  .profilepic{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .portfolio, .portfolio img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-section{
+    width: 100%;
+  }
+
+  .sidebar{
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .profilepic{
+    width: 70%;
+    padding: 20px;
+  }
+
+  .portfolio, .portfolio img{
+    overflow-y: auto;
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .container{
+    width: 100%;
+  }
+
+  .contact-page, .portfolio-page, .about-page{
+    width: 33.33%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #logo{
+    width: 100%;
+  }
+
+  .profilepic{
+    width: 100%;
+  }
+
+  .main-section{
+    width: 90%;
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+
+  .sidebar{
+    width: 90%;
+    float:left;
+    margin-left: 30px;
+  }
+
+  p{
+    text-align: center;
+  }
+  #masthead{
+    height: 160px;
+  }
+
+  .portfolio, .portfolio img{
+    width: 100%;
+    height: 100%;
+  }
+  }
+
